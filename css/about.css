@@ -1,0 +1,67 @@
+@import url("https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  font-family: Helvetica, Arial, sans-serif;
+  box-sizing: border-box;
+  transition-property: all;
+  transition-duration: 0.1s;
+}
+
+a {
+  text-decoration: none;
+}
+
+aside img {
+  width: 100%;
+}
+
+body {
+  background: url(../img/basket-ball-player.png);
+  background-size: cover;
+  background-color: #000000;
+}
+
+main .content {
+  color: white;
+  padding: 20px 5%;
+}
+main .content h1,
+main .content h2 {
+  font-family: "Archivo Black";
+  text-align: center;
+}
+main .content p {
+  margin: 50px 0;
+  letter-spacing: 2px;
+  font-size: 16px;
+  line-height: 20px;
+}
+main .content .imgs {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+@media screen and (max-width: 600px) {
+  main .content .imgs {
+    flex-direction: column;
+  }
+}
+main .content .imgs img {
+  margin: 10px 20px;
+}
+@media screen and (max-width: 600px) {
+  main .content .imgs img {
+    margin: 20px;
+  }
+}
+@media screen and (max-width: 200px) {
+  main .content .imgs img {
+    width: 90vw;
+  }
+}
+
+/*# sourceMappingURL=about.css.map */

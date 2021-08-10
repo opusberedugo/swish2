@@ -1,0 +1,77 @@
+@import url('https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap');
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+  text-decoration: none;
+}
+
+body {
+  background-color: black;
+}
+
+main {
+  padding: 0 10%;
+  .search {
+    form {
+      margin: 20px auto;
+      border-radius: 5px;
+      width: 50vw;
+      // width: -moz-fit-content;
+      padding: 5px;
+      display: flex;
+      background-color: white;
+      input {
+        width: 300px;
+        margin: 0 10px;
+        border: none;
+        flex-grow: 1;
+        font-size: 1em;
+        padding: 5px;
+      }
+      button {
+        background-color: white;
+        border: none;
+        &.submit {
+          background-color: #498d66;
+          border-radius: 5px;
+          color: white;
+          padding: 10px;
+          font-family: Montserrat, Helvetica, Arial, sans-serif;
+          font-weight: 600;
+        }
+      }
+    }
+  }
+  .news {
+    display: grid;
+    grid-template-columns: 4fr 1fr;
+    color: white;
+    font-family: 'Archivo Black';
+    border-bottom: 2px solid #ffffffb8;
+    .text {
+      h1 {
+        text-transform: uppercase;
+        // margin: 20px 0;
+        font-size: 3em;
+      }
+      p {
+        font-family: Helvetica, Arial, sans-serif;
+        width: 50%;
+        margin: 10px 0;
+      }
+      a {
+        display: block;
+        color: #498d66;
+        margin: 10px 0;
+      }
+    }
+    .img {
+      img {
+        width: 100%;
+        margin: 20px 0;
+      }
+    }
+  }
+}
