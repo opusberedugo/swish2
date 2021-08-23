@@ -1,4 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap');
+@mixin media-max ($width) {
+  @media screen and (max-width: $width) {
+    @content;
+  }
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -50,6 +56,7 @@ main {
     color: white;
     font-family: 'Archivo Black';
     border-bottom: 2px solid #ffffffb8;
+    @include media-max () {}
     .text {
       h1 {
         text-transform: uppercase;
