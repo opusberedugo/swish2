@@ -20,6 +20,8 @@ header {
   height: fit-content;
   overflow: hidden;
   .flex-container {
+    display: flex;
+    padding: 10px 5%;
     .flex-item {
       text-transform: uppercase;
       font: 'Archivo Black';
@@ -36,6 +38,9 @@ header {
             display: flex;
             flex-direction: row;
             align-items: center;
+          }
+          svg {
+            width: 120px;
           }
         }
         a {
@@ -57,6 +62,20 @@ header {
         padding: 20px;
         width: 50%;
         color: white;
+      }
+      h2 {
+        color: white;
+        font-family: 'Archivo Black';
+      }
+      .carousel {
+        .slide {
+          .box {
+            width: 200px;
+            height: 150px;
+            border: 2px white solid;
+            margin: 10px 0;
+          }
+        }
       }
     }
   }

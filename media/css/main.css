@@ -1,0 +1,52 @@
+body {
+  background-color: black;
+}
+
+button {
+  background-color: #0000;
+  border: 1px white solid;
+  padding: 10px;
+  border-radius: 5rem;
+  height: fit-content;
+  width: fit-content;
+}
+button svg path {
+  fill: white;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  padding: 10px 50px;
+}
+@media screen and (max-width: 800px) {
+  .grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media screen and (max-width: 600px) {
+  .grid {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+.grid img {
+  width: 100%;
+}
+
+.video {
+  border: 1px solid white;
+  background-image: url("../img/vidar-nordli-mathisen-cR03g2ud84g-unsplash 2.png");
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+.video .overlay {
+  padding: 90px 100px;
+  background-color: #000000cb;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  align-content: center;
+}
+
+/*# sourceMappingURL=main.css.map */
