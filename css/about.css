@@ -6,6 +6,7 @@
   box-sizing: border-box;
   transition-property: all;
   transition-duration: 0.1s;
+  outline: none;
 }
 
 a {
@@ -20,6 +21,50 @@ body {
   background: url(../img/basket-ball-player.png);
   background-size: cover;
   background-color: #000000;
+}
+
+nav {
+  display: flex;
+  font-family: "Archivo Black";
+  align-content: center;
+  align-items: center;
+  padding: 5px 0;
+  padding: 20px;
+}
+nav .brand .logo {
+  width: 50px;
+}
+nav .brand .logo img {
+  width: 100%;
+}
+nav .brand .hamburger {
+  display: none;
+}
+nav .options {
+  display: flex;
+  flex-grow: 1;
+}
+nav .options .links {
+  margin-left: auto;
+}
+nav .options .links a {
+  font-family: "Archivo Black";
+  color: white;
+  font-size: 1rem;
+  text-transform: uppercase;
+  padding: 20px;
+}
+nav .options .links a.current {
+  background-color: #498d66;
+}
+nav .options .links a:hover {
+  background-color: #498d66;
+}
+nav .options .social {
+  margin-left: auto;
+}
+nav .options .social svg path {
+  fill: white;
 }
 
 main .content {

@@ -14,6 +14,11 @@ body {
   background-color: #000000;
 }
 
+nav {
+  @include topnav;
+  padding: 20px;
+}
+
 main {
   .content {
     // background: url('./img/basket-ball-player.png');
