@@ -62,104 +62,18 @@ nav .options .social svg path {
   position: absolute;
 }
 
-header {
-  background-image: url("../img/oleksii-s-O2kqxbix4Mw-unsplash 2.png");
-  background-size: cover;
-  background-color: #000000e0;
-  padding-bottom: 100px;
-  height: fit-content;
-  overflow: hidden;
-}
-header .flex-container {
-  display: flex;
-  padding: 10px 5%;
-}
-header .flex-container .flex-item {
-  text-transform: uppercase;
-  font: "Archivo Black";
-}
-header .flex-container .flex-item .caption h1 {
-  padding: 20px;
-  font-family: "Archivo Black";
-  font-size: 4em;
-  color: #498d66;
-}
-header .flex-container .flex-item .caption h1.stroked {
-  -webkit-text-fill-color: #0000;
-  -webkit-text-stroke-width: 1px;
-  -webkit-text-stroke-color: white;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-}
-header .flex-container .flex-item .caption h1 svg {
-  width: 120px;
-}
-header .flex-container .flex-item .caption a.btn {
-  background-color: #498d66;
-  color: white;
-  font-size: 22px;
-  padding: 20px;
-  display: block;
-  width: fit-content;
-  width: -moz-fit-content;
-  font-family: "Archivo Black";
-  margin-left: 20px;
-  text-transform: capitalize;
-}
-header .flex-container .flex-item .lead {
-  padding: 20px;
-  width: 50%;
-  color: white;
-}
-header .flex-container .flex-item h2 {
-  color: white;
-  font-family: "Archivo Black";
-}
-header .flex-container .flex-item .carousel .slide .box {
-  width: 200px;
-  height: 150px;
-  border: 2px white solid;
-  margin: 10px 0;
-}
-
 body {
   background-color: black;
 }
 
-section.sub {
-  padding: 20px 0;
+header {
+  background-color: white;
 }
-section.sub h2 {
-  color: #498d66;
-  font-family: "Archivo Black";
-  text-align: center;
-  margin: 20px 0;
-}
-section.sub form {
+header .columns {
   display: flex;
 }
-section.sub form input {
-  border: 1px #498d66 solid;
-  background-color: black;
-  padding: 10px;
-  color: white;
-  font-size: 1rem;
-  width: 50%;
-  margin-left: auto;
-  padding-left: 20px;
-  border-radius: 5rem;
-}
-section.sub form button {
-  background-color: #498d66;
-  color: white;
-  font-family: "Archivo Black";
-  font-size: 1rem;
-  padding: 10px;
-  border: 1px #498d66 solid;
-  border-radius: 5px;
-  margin-left: 10px;
-  margin-right: auto;
+header .columns .column {
+  flex-grow: 1;
 }
 
 /*# sourceMappingURL=main.css.map */

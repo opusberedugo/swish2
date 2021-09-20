@@ -12,112 +12,16 @@ nav {
   position: absolute;
 }
 
-header {
-  background-image: url('../img/oleksii-s-O2kqxbix4Mw-unsplash\ 2.png');
-  background-size: cover;
-  background-color: #000000e0;
-  padding-bottom: 100px;
-  height: fit-content;
-  overflow: hidden;
-  .flex-container {
-    display: flex;
-    padding: 10px 5%;
-    .flex-item {
-      text-transform: uppercase;
-      font: 'Archivo Black';
-      .caption {
-        h1 {
-          padding: 20px;
-          @include archivo;
-          font-size: 4em;
-          color: $green;
-          &.stroked {
-            -webkit-text-fill-color: #0000;
-            -webkit-text-stroke-width: 1px;
-            -webkit-text-stroke-color: white;
-            display: flex;
-            flex-direction: row;
-            align-items: center;
-          }
-          svg {
-            width: 120px;
-          }
-        }
-        a {
-          &.btn {
-            background-color: $green;
-            color: white;
-            font-size: 22px;
-            padding: 20px;
-            display: block;
-            width: fit-content;
-            width: -moz-fit-content;
-            font-family: 'Archivo Black';
-            margin-left: 20px;
-            text-transform: capitalize;
-          }
-        }
-      }
-      .lead {
-        padding: 20px;
-        width: 50%;
-        color: white;
-      }
-      h2 {
-        color: white;
-        font-family: 'Archivo Black';
-      }
-      .carousel {
-        .slide {
-          .box {
-            width: 200px;
-            height: 150px;
-            border: 2px white solid;
-            margin: 10px 0;
-          }
-        }
-      }
-    }
-  }
-}
-
 body {
   background-color: black;
 }
 
-section.sub {
-  padding: 20px 0;
-  h2 {
-    color: $green;
-    font-family: 'Archivo Black';
-    text-align: center;
-    margin: 20px 0;
-  }
-  form {
+header {
+  background-color: white;
+  .columns {
     display: flex;
-    input {
-      border: 1px $green solid;
-      background-color: black;
-      padding: 10px;
-      color: white;
-      font-size: 1rem;
-      // flex-grow: 2;
-      width: 50%;
-      margin-left: auto;
-      padding-left: 20px;
-      border-radius: 5rem;
-    }
-    button {
-      background-color: $green;
-      color: white;
-      font-family: 'Archivo Black';
-      font-size: 1rem;
-      padding: 10px;
-      // flex-grow: 1;
-      border: 1px $green solid;
-      border-radius: 5px;
-      margin-left: 10px;
-      margin-right: auto;
+    .column {
+      flex-grow: 1;
     }
   }
 }

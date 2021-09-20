@@ -1,11 +1,21 @@
 @import "variable";
 @mixin topnav {
+  position: sticky;
+  top: 0;
+  left: 0;
   display: flex;
   font-family: 'Archivo Black';
   align-content: center;
   align-items: center;
   padding: 5px 0;
+  @include media-max(800px) {
+    display: block;
+  }
   .brand {
+    @include media-max(800px) {
+      display: flex;
+      align-items: center;
+    }
     .logo {
       width: 50px;
       img {
@@ -14,19 +24,40 @@
     }
     .hamburger {
       display: none;
+      @include media-max(800px) {
+        display: inherit;
+        margin-left: auto;
+        background-color: #0000;
+        border: none;
+        svg {
+          path {
+            fill: white;
+          }
+        }
+      }
     }
   }
   .options {
     display: flex;
     flex-grow: 1;
+    @include media-max(800px) {
+      display: none;
+      margin-top: 20px;
+    }
     .links {
       margin-left: auto;
+      // @include media-max(800px) {
+      //   display: none;
+      // }
       a {
         font-family: "Archivo Black";
         color: white;
         font-size: 1rem;
         text-transform: uppercase;
         padding: 20px;
+        @include media-max(800px) {
+          display: block;
+        }
         &.current {
           background-color: $green;
         }

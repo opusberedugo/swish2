@@ -1,0 +1,30 @@
+@mixin media-max($width) {
+  @media screen and (max-width: $width) {
+    @content;
+  }
+}
+
+.hero__categories__all:after,
+.arrow_carrot-down:before {
+  visibility: hidden;
+}
+
+.latest-product__slider.owl-carousel .owl-nav {
+  @include media-max(300px) {
+    display: none;
+  }
+}
+
+header {
+  .container {
+    .row {
+      align-items: center;
+      nav {
+        ul {
+          display: flex;
+          justify-content: center;
+        }
+      }
+    }
+  }
+}

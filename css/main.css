@@ -14,12 +14,26 @@ a {
 }
 
 nav {
+  position: sticky;
+  top: 0;
+  left: 0;
   display: flex;
   font-family: "Archivo Black";
   align-content: center;
   align-items: center;
   padding: 5px 0;
   padding: 20px;
+}
+@media screen and (max-width: 800px) {
+  nav {
+    display: block;
+  }
+}
+@media screen and (max-width: 800px) {
+  nav .brand {
+    display: flex;
+    align-items: center;
+  }
 }
 nav .brand .logo {
   width: 50px;
@@ -30,9 +44,26 @@ nav .brand .logo img {
 nav .brand .hamburger {
   display: none;
 }
+@media screen and (max-width: 800px) {
+  nav .brand .hamburger {
+    display: inherit;
+    margin-left: auto;
+    background-color: #0000;
+    border: none;
+  }
+  nav .brand .hamburger svg path {
+    fill: white;
+  }
+}
 nav .options {
   display: flex;
   flex-grow: 1;
+}
+@media screen and (max-width: 800px) {
+  nav .options {
+    display: none;
+    margin-top: 20px;
+  }
 }
 nav .options .links {
   margin-left: auto;
@@ -43,6 +74,11 @@ nav .options .links a {
   font-size: 1rem;
   text-transform: uppercase;
   padding: 20px;
+}
+@media screen and (max-width: 800px) {
+  nav .options .links a {
+    display: block;
+  }
 }
 nav .options .links a.current {
   background-color: #498d66;

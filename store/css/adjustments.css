@@ -1,0 +1,20 @@
+.hero__categories__all:after,
+.arrow_carrot-down:before {
+  visibility: hidden;
+}
+
+@media screen and (max-width: 300px) {
+  .latest-product__slider.owl-carousel .owl-nav {
+    display: none;
+  }
+}
+
+header .container .row {
+  align-items: center;
+}
+header .container .row nav ul {
+  display: flex;
+  justify-content: center;
+}
+
+/*# sourceMappingURL=adjustments.css.map */
