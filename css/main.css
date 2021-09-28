@@ -99,68 +99,56 @@ nav .options .social svg path {
 }
 
 header {
-  background-image: url("../img/oleksii-s-O2kqxbix4Mw-unsplash 2.png");
   background-size: cover;
   background-color: #000000e0;
-  padding-bottom: 100px;
+  padding-bottom: 0px;
   height: fit-content;
   overflow: hidden;
 }
-header .flex-container {
-  display: flex;
-  padding: 10px 5%;
+header section.hero .owl-carousel .slide {
+  width: 100vw;
+  padding: 200px 10%;
+  text-align: center;
+  color: white;
 }
-header .flex-container .flex-item {
-  text-transform: uppercase;
-  font: "Archivo Black";
+header section.hero .owl-carousel .slide h1 {
+  font-size: 3rem;
+  margin: 20px 0;
 }
-header .flex-container .flex-item .caption h1 {
-  padding: 20px;
-  font-family: "Archivo Black";
-  font-size: 4em;
-  color: #498d66;
+header section.hero .owl-carousel .slide p {
+  font-size: 1rem;
 }
-header .flex-container .flex-item .caption h1.stroked {
-  -webkit-text-fill-color: #0000;
-  -webkit-text-stroke-width: 1px;
-  -webkit-text-stroke-color: white;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
+header section.hero .owl-carousel .slide.slide-1 {
+  background-image: url("../img/news/logan-weaver-xtPs2_MlPYc-unsplash.jpg");
+  background-size: 100%;
 }
-header .flex-container .flex-item .caption h1 svg {
-  width: 120px;
+header section.hero .owl-carousel .slide.slide-2 {
+  background-image: url("../img/news/markus-spiske-BfphcCvhl6E-unsplash.jpg");
+  background-size: 100%;
 }
-header .flex-container .flex-item .caption a.btn {
+header section.hero .owl-carousel .slide.slide-3 {
+  background-image: url("../img/news/ramiro-pianarosa-8hW2ZB4OHZ0-unsplash.jpg");
+  background-size: 100%;
+}
+header section.hero .owl-carousel .slide button,
+header section.hero .owl-carousel .slide .button {
   background-color: #498d66;
+  border: none;
+  font-size: 18px;
   color: white;
-  font-size: 22px;
-  padding: 20px;
-  display: block;
-  width: fit-content;
-  width: -moz-fit-content;
-  font-family: "Archivo Black";
-  margin-left: 20px;
-  text-transform: capitalize;
-}
-header .flex-container .flex-item .lead {
-  padding: 20px;
-  width: 50%;
-  color: white;
-}
-header .flex-container .flex-item h2 {
-  color: white;
-  font-family: "Archivo Black";
-}
-header .flex-container .flex-item .carousel .slide .box {
-  width: 200px;
-  height: 150px;
-  border: 2px white solid;
-  margin: 10px 0;
+  padding: 30px 50px;
+  border-radius: 5px;
+  text-transform: uppercase;
+  margin: 50px 0;
+  font-weight: 600;
 }
 
 body {
   background-color: black;
+}
+
+section.hero img {
+  width: 100%;
 }
 
 section.sub {
